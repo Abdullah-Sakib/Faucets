@@ -11,3 +11,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.custom-color{
+  color: #9b1fe9;
+}
+
+.custom-font{
+  font-family: 'Varela Round', sans-serif;
+}
