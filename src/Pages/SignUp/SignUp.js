@@ -24,7 +24,7 @@ const SignUp = () => {
                 placeholder="Enter your email"
               />
             </Form.Group>
-            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+            <Form.Group className="mb-3" controlId="exampleForm.ControlInput2">
               <Form.Label className="custom-font fw-semibold mb-0">
                 Password
               </Form.Label>

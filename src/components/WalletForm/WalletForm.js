@@ -51,11 +51,13 @@ const WalletForm = () => {
             />
           </div>
         </Form.Group>
+        <div>
         <ReCAPTCHA
           className="mb-3"
-          sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+          sitekey={process.env.REACT_APP_site_key}
           onChange={handleRecaptcha}
         />
+        </div>
         <Button
           type="submit"
           className="rounded-1 border-0 "
