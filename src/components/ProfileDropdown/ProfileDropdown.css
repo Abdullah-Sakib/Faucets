@@ -1,0 +1,21 @@
+.dropdownProfile{
+  position:absolute;
+  top: 4rem;
+  right: 3.5rem;
+  width: 150px;
+  padding: 7px;
+  border-radius: 5px;
+  background-color: white;
+  border: 1px solid #ddd;
+}
+
+.dropdownProfile > li{
+  list-style-type: none;
+  color: #6d7380;
+  padding-left: 8px;
+}
+
+.dropdownProfile > li:hover{
+  background-color: #eef2fe;
+}
+

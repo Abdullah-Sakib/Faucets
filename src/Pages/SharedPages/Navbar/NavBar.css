@@ -16,9 +16,17 @@
   margin: 8px;
 }
 
+
+
 .drop-down {
   padding: 6px 15px;
   border: 1px solid #ddd;
   color: gray;
   background-color: white;
+  content: none;
+  /* -webkit-appearance: none; */
+}
+
+#dropdown-basic::after {
+  content: none;
 }
