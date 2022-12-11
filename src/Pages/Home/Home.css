@@ -12,3 +12,14 @@
 .warning{
   background-color: #eef2fe;
 }
+
+.content-title > p{
+  width: 50;
+}
+
+
+@media screen and (max-width: 480px) {
+  .content-title > p{
+    width: 100%;
+  }
+}

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import {  Nav, Navbar } from "react-bootstrap";
-import { Form, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { BiUserCircle } from "react-icons/bi";
 import { IoWalletSharp } from "react-icons/io5";
 import "./NavBar.css";
@@ -48,7 +48,7 @@ const NavBar = () => {
               <BiUserCircle className="fs-2  text-secondary"></BiUserCircle>
             </button>
             {
-              openMenu && <ProfileDropdown></ProfileDropdown>
+              openMenu && <ProfileDropdown openMenu={openMenu} setOpenMenu={setOpenMenu}></ProfileDropdown>
             }
 
             {/* <Dropdown>

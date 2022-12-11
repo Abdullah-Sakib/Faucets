@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Button, Form } from "react-bootstrap";
 import ReCAPTCHA from "react-google-recaptcha";
+import './WalletForm.css'
 
 const WalletForm = () => {
   const [verified, setVerified] = useState(false);
@@ -19,7 +20,7 @@ const WalletForm = () => {
   };
 
   return (
-    <div className="w-50 mt-3">
+    <div className="wallet-form mt-3">
       <Form onSubmit={handleWalletSubmit}>
         <Form.Group className="mb-3 " controlId="formBasicEmail">
           <Form.Label className="custom-color custom-font fs-6 fw-semibold">
@@ -34,7 +35,7 @@ const WalletForm = () => {
           <div className="d-flex ">
             <Form.Control
               name="requestType"
-              className="w-50 me-2"
+              className="w-50 me-2 requestType"
               type="text"
               disabled
               value={"20 Test Link"}
@@ -42,7 +43,7 @@ const WalletForm = () => {
             />
             <Form.Control
               name="amount"
-              className="w-50 ms-2"
+              className="w-50 ms-2 amount"
               type="text"
               disabled
               value={"0.5 ETH"}

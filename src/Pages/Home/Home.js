@@ -14,7 +14,7 @@ const Home = () => {
 
       <div className="content-title px-5 my-5 custom-font  ">
         <h2 className="custom-color fw-bold fs-1 mb-3">Request testnet LINK</h2>
-        <p className="w-50 text-secondary">
+        <p className=" text-secondary">
           Get testnet LINK for an account on one of the supported blockchain
           testnets so you can create and test your own oracle and Chainlinked
           smart contract
