@@ -1,30 +1,15 @@
-import React from "react";
-import { Dropdown, Nav, Navbar } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import {  Nav, Navbar } from "react-bootstrap";
+import { Form, Link } from "react-router-dom";
 import { BiUserCircle } from "react-icons/bi";
 import { IoWalletSharp } from "react-icons/io5";
 import "./NavBar.css";
 import ProfileDropdown from "../../../components/ProfileDropdown/ProfileDropdown";
 
-const currencies = [
-  {
-    id: 1,
-    name: "BNB Chain Testnet",
-    logo: "https://cryptonodes.io/wp-content/uploads/2022/06/Binance-Icon-Logo.wine_.svg",
-  },
-  {
-    id: 2,
-    name: "BNB Chain Testnet",
-    logo: "https://cryptonodes.io/wp-content/uploads/2022/06/Binance-Icon-Logo.wine_.svg",
-  },
-  {
-    id: 3,
-    name: "BNB Chain Testnet",
-    logo: "https://cryptonodes.io/wp-content/uploads/2022/06/Binance-Icon-Logo.wine_.svg",
-  },
-];
+
 
 const NavBar = () => {
+  const [openMenu, setOpenMenu] = useState(false);
   return (
     <div>
       <Navbar
@@ -59,10 +44,12 @@ const NavBar = () => {
               </button>{" "}
             </Nav.Link>
 
-            <button className="profile-button">
+            <button onClick={() => setOpenMenu(!openMenu)} className="profile-button">
               <BiUserCircle className="fs-2  text-secondary"></BiUserCircle>
             </button>
-            <ProfileDropdown></ProfileDropdown>
+            {
+              openMenu && <ProfileDropdown></ProfileDropdown>
+            }
 
             {/* <Dropdown>
               <Dropdown.Toggle
