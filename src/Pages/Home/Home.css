@@ -16,9 +16,16 @@
   width: 50;
 }
 
+.navlink-container{
+  display: flex;
+}
+
 
 @media screen and (max-width: 480px) {
   .content-title > p{
     width: 100%;
+  }
+  .navlink-container{
+    display: block;
   }
 }

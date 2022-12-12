@@ -10,7 +10,7 @@ const Login = () => {
 
   return (
     <div className="custom-bgc form d-flex justify-content-center align-items-center">
-      <Card className="form-card shadow-sm rounded-1">
+      <Card className="form-card shadow-sm rounded-1 mx-4">
         <Card.Body>
           <Card.Title className="text-center fs-3 custom-font fw-semibold">
             Login

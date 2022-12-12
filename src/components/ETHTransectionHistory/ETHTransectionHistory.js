@@ -3,7 +3,7 @@ import { Table } from "react-bootstrap";
 
 const ETHTransectionHistory = () => {
   return (
-    <div className="mt-4 text-center" style={{ width: "40%" }}>
+    <div className="mt-4 text-center table" >
       <Table striped bordered hover size="sm">
         <thead>
           <tr>

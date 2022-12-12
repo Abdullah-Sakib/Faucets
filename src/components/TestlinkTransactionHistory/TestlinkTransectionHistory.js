@@ -3,8 +3,8 @@ import { Table } from "react-bootstrap";
 
 const TestlinkTransectionHistory = () => {
   return (
-    <div className="mt-4 text-center" style={{ width: "40%" }}>
-      <Table striped bordered hover size="sm">
+    <div className="mt-4 text-center table" >
+      <Table striped bordered hover size="sm" >
         <thead>
           <tr>
             <th className="px-4">Sr</th>

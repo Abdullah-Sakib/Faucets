@@ -43,13 +43,13 @@ const Home = () => {
           <WalletForm></WalletForm>
         </div>
 
-        <div className="mt-3">
+        <div className="mt-4 pt-1">
           <h6 className="mb-4 custom-font fs-6 fw-semibold">Request History</h6>
-          <div>
-            <NavLink style={navActive} to="eth" className="rounded-1">
+          <div className="navlink-container">
+            <NavLink style={navActive} to="eth" className="rounded-1 navlink">
               ETH Transaction History
             </NavLink>
-            <NavLink style={navActive} className="ms-2 rounded-1" to="testlink">
+            <NavLink style={navActive} className="ms-2 rounded-1 navlink" to="testlink">
               TestLink Transaction History
             </NavLink>
           </div>
