@@ -1,3 +1,7 @@
+.navigation-bar{
+  margin: 0 30px;
+}
+
 .wallet-button {
   border: 2px solid #9b1fe9;
   color: #9b1fe9;
@@ -17,16 +21,21 @@
 }
 
 
-
 .drop-down {
   padding: 6px 15px;
   border: 1px solid #ddd;
   color: gray;
   background-color: white;
   content: none;
-  /* -webkit-appearance: none; */
 }
 
 #dropdown-basic::after {
   content: none;
+}
+
+@media screen and (max-width: 768px) {
+  .navigation-bar{
+    padding: 0, 30px;
+  }
+
 }

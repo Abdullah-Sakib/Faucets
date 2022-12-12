@@ -20,7 +20,7 @@ const Home = () => {
         <p className="m-0 text-white fw-semibold">Notice here</p>
       </div>
 
-      <div className="content-title px-5 my-5 custom-font  ">
+      <div className="content-title my-5 custom-font px-4 mx-1">
         <h2 className="custom-color fw-bold fs-1 mb-3">Request testnet LINK</h2>
         <p className=" text-secondary">
           Get testnet LINK for an account on one of the supported blockchain
@@ -29,7 +29,7 @@ const Home = () => {
         </p>
       </div>
 
-      <div className="mx-5 p-3 bg-white">
+      <div className="p-3 bg-white home-content">
         <div className="warning flex align-items-center">
           <p className="m-0 p-2 ">
             <AiFillWarning className="mb-1 fs-5 me-2 custom-color"></AiFillWarning>{" "}
@@ -49,7 +49,11 @@ const Home = () => {
             <NavLink style={navActive} to="eth" className="rounded-1 navlink">
               ETH Transaction History
             </NavLink>
-            <NavLink style={navActive} className="ms-2 rounded-1 navlink" to="testlink">
+            <NavLink
+              style={navActive}
+              className="ms-2 rounded-1 navlink"
+              to="testlink"
+            >
               TestLink Transaction History
             </NavLink>
           </div>
