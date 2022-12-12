@@ -1,4 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
+import ETHTransectionHistory from "../components/ETHTransectionHistory/ETHTransectionHistory";
+import TestlinkTransectionHistory from "../components/TestlinkTransactionHistory/TestlinkTransectionHistory";
 import Main from "../Layout/Main";
 import FAQ from "../Pages/FAQ/FAQ";
 import Home from "../Pages/Home/Home";
@@ -12,7 +14,12 @@ export const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <Home></Home>
+        element: <Home></Home>,
+        children: [
+          {path:'/',element:<ETHTransectionHistory></ETHTransectionHistory>},
+          {path:'/eth',element: <ETHTransectionHistory></ETHTransectionHistory>},
+          {path:'/testlink',element: <TestlinkTransectionHistory></TestlinkTransectionHistory>},
+        ]
       },
       {
         path: '/login',

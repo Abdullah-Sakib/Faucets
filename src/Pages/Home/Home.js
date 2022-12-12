@@ -1,13 +1,21 @@
 import React from "react";
 import { AiFillWarning } from "react-icons/ai";
+import { NavLink, Outlet } from "react-router-dom";
 import WalletForm from "../../components/WalletForm/WalletForm";
 import "./Home.css";
 
-
-
 const Home = () => {
+  const navActive = ({ isActive }) => {
+    return {
+      fontWeight: isActive ? "500" : "normal",
+      backgroundColor: isActive ? "#0000ff" : "#f5f7fd",
+      padding: "8px 10px",
+      textDecoration: "none",
+      color: isActive ? "white" : "black",
+    };
+  };
   return (
-    <div className="home">
+    <div className="home pb-4">
       <div className="notice-board d-flex justify-content-center align-items-center">
         <p className="m-0 text-white fw-semibold">Notice here</p>
       </div>
@@ -33,6 +41,19 @@ const Home = () => {
 
         <div>
           <WalletForm></WalletForm>
+        </div>
+
+        <div className="mt-3">
+          <h6 className="mb-4 custom-font fs-6 fw-semibold">Request History</h6>
+          <div>
+            <NavLink style={navActive} to="eth" className="rounded-1">
+              ETH Transaction History
+            </NavLink>
+            <NavLink style={navActive} className="ms-2 rounded-1" to="testlink">
+              TestLink Transaction History
+            </NavLink>
+          </div>
+          <Outlet></Outlet>
         </div>
       </div>
     </div>
