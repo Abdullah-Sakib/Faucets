@@ -1,15 +1,17 @@
-import React from "react";
+import React  from "react";
 import { Button, Card } from "react-bootstrap";
 import Form from "react-bootstrap/Form";
 import { Link } from "react-router-dom";
-import { BsGoogle, BsFacebook, BsInstagram } from "react-icons/bs";
 import "./Login.css";
+import GoogleSignIn from "../../components/GoogleSignIn/GoogleSignIn";
+
 
 const Login = () => {
+
   return (
     <div className="custom-bgc form d-flex justify-content-center align-items-center">
       <Card className="form-card shadow-sm rounded-1">
-        <Card.Body >
+        <Card.Body>
           <Card.Title className="text-center fs-3 custom-font fw-semibold">
             Login
           </Card.Title>
@@ -38,13 +40,15 @@ const Login = () => {
             <Button className="submit-btn border-0 btn rounded-1 fw-semibold mt-3">
               Login
             </Button>{" "}
-
-            <p className="text-center fw-semibold my-3">Don't have an account? <Link to="/signup" className="text-decoration-none custom-color">Signup</Link></p>
+            <p className="text-center fw-semibold my-3">
+              Don't have an account?{" "}
+              <Link to="/signup" className="text-decoration-none custom-color">
+                Signup
+              </Link>
+            </p>
             <h5 className="text-center">Or</h5>
             <div className="d-flex justify-content-center my-4">
-              <BsGoogle className="mx-2 fs-5"></BsGoogle>
-              <BsFacebook className="mx-3 fs-5"></BsFacebook>
-              <BsInstagram className="mx-2 fs-5"> </BsInstagram>
+             <GoogleSignIn></GoogleSignIn>
             </div>
           </Form>
         </Card.Body>
