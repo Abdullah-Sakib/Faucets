@@ -1,22 +1,21 @@
-import React  from "react";
+import React from "react";
 import { Button, Card } from "react-bootstrap";
 import Form from "react-bootstrap/Form";
 import { Link } from "react-router-dom";
 import "./Login.css";
 import GoogleSignIn from "../../components/GoogleSignIn/GoogleSignIn";
 
-
 const Login = () => {
-
-  const handleLogin = e =>{
+  const handleLogin = (e) => {
     e.preventDefault();
     const email = e.target.email.value;
     const password = e.target.password.value;
     const user = {
-      email, password
+      email,
+      password,
     };
     console.log(user);
-  } 
+  };
 
   return (
     <div className="custom-bgc form d-flex justify-content-center align-items-center">
@@ -49,7 +48,10 @@ const Login = () => {
                 placeholder="Enter your password"
               />
             </Form.Group>
-            <Button type="submit" className="submit-btn border-0 btn rounded-1 fw-semibold mt-3">
+            <Button
+              type="submit"
+              className="submit-btn border-0 btn rounded-1 fw-semibold mt-3"
+            >
               Login
             </Button>{" "}
             <p className="text-center fw-semibold my-3">
@@ -60,7 +62,7 @@ const Login = () => {
             </p>
             <h5 className="text-center">Or</h5>
             <div className="d-flex justify-content-center my-4">
-             <GoogleSignIn></GoogleSignIn>
+              <GoogleSignIn></GoogleSignIn>
             </div>
           </Form>
         </Card.Body>
